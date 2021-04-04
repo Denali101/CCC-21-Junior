@@ -12,7 +12,5 @@ while True:
         direction = "left"
     elif choice % 2 == 0: # Even nums
         direction = "right"
-    previous = direction # The previous variable needs to be updated when we loop again
+    previous = direction # The previous variable needs to be updated when we loop again, because the "direction" variable is reset everytime we loop. If this line wasn't here, both the previous and direction variables would be empty.
     print(direction + " " + nums[2:])
-    
-  
